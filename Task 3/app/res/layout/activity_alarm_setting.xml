@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#d5e1e8"
+    android:layout_height="match_parent">
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d5e1e8"/>
+
+    <Button
+        android:id="@+id/chooseToneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/pink"
+        android:text="Choose Tone" />
+
+    <TextView
+        android:id="@+id/selectedToneTextView"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chooseToneButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="-36dp"
+        android:layout_marginEnd="25dp"
+        android:layout_toEndOf="@+id/chooseToneButton"
+        android:text="Tone"
+        android:textColor="@color/DarkBlue"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/setAlarmButton"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chooseToneButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/pink"
+        android:text="Set Alarm" />
+
+</RelativeLayout>
