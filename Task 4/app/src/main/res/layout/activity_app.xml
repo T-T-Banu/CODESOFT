@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252c4a"
+    android:padding="16dp"
+    tools:context=".AppActivity">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/optionsRadioGroup"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="71dp"
+        android:background="@drawable/category_card_bc"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="App Development"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <RadioGroup
+        android:id="@+id/optionsRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/home_bg"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/option1RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/option2RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/option3RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/option4RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionsRadioGroup"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#1ed2be"
+        android:textSize="20dp"
+        android:text="Next" />
+
+
+</RelativeLayout>
